@@ -1,0 +1,24 @@
+<script>
+
+	function display99() {
+		var html = '';
+		for (var i = 1; i < 10; i++) {
+			for (var j = 1; j <= i; j++) {
+				html += j + "×" + i + '=' + i * j + '&nbsp;&nbsp;&nbsp;';
+			}
+			html += "<br><br>";
+		}
+		document.getElementById("demo99").innerHTML = html;
+	}
+
+</script>
+<html>
+
+<body onload='display99()'>
+	<h1>九九乘法口诀表</h1>
+	<hr>
+	<p id="demo99"></p>
+	<button type="button" onclick="display99()" disabled="false" style="display:none;">显示九九乘法口诀表</button>
+</body>
+
+</html>
